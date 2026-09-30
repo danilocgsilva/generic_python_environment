@@ -1,0 +1,5 @@
+services:
+  python_env:
+    container_name: ${CONTAINER_NAME}
+    build:
+      context: .

@@ -8,7 +8,8 @@ RUN apt install -y \
     ca-certificates \
     apt-transport-https \
     software-properties-common \
-    gnupg2
+    gnupg2 \
+    python3-pip
 
 RUN mkdir -p /run/sshd
 RUN chmod 755 /run/sshd
@@ -23,7 +24,3 @@ RUN chown -R pythondcgs:pythondcgs /home/pythondcgs
 EXPOSE 22
 
 CMD ["/bin/bash", "-c", "/usr/sbin/sshd -D"]
-
-
-
-

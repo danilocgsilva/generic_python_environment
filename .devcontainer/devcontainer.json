@@ -1,0 +1,5 @@
+{
+    "name": "generic_python_env",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "danilocgsilva_python_env"
+}
